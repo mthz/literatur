@@ -3,12 +3,11 @@ before_install:
 script:
 - mkdir _build
 - cd ros/ros-basics
-- pdflatex -output-directory _build arra-ros-basics.tex
+- pdflatex arra-ros-basics.tex
 deploy:
   provider: releases
   file:
-  - _build/arra-ros-basics.pdf
-  - _build/arra-ros-build-system.pdf
+  - ros/ros-basics/arra-ros-basics.pdf
   skip_cleanup: true
   on:
     tags: true
