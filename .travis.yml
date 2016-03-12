@@ -1,0 +1,16 @@
+before_install:
+- "sudo apt-get update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended"
+script:
+- mkdir _build
+- pdflatex -output-directory _build ros/ros-basics/arra-ros-basics.tex
+- pdflatex -output-directory _build ros/ros-build-system/arra-ros-build-system.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: [YOUR KEY]
+  file:
+  - _build/arra-ros-basics.pdf
+  - _build/arra-ros-build-system.pdf
+  skip_cleanup: true
+  on:
+    tags: true
