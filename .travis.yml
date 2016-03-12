@@ -6,8 +6,6 @@ script:
 - pdflatex -output-directory _build ros/ros-build-system/arra-ros-build-system.tex
 deploy:
   provider: releases
-  api_key:
-    secure: [YOUR KEY]
   file:
   - _build/arra-ros-basics.pdf
   - _build/arra-ros-build-system.pdf
