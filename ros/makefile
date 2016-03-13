@@ -9,7 +9,7 @@ all:
 clean:
 	(cd ros-basics; make clean)
 	(cd ros-build-system; make clean)
-	(cd ros-tools-roslauch; make clean)
+	(cd ros-tools-roslaunch; make clean)
 	(cd ros-tools-rqt; make clean)
 	(cd ros-tools-rviz; make clean)
 	(cd ros-topic-message-service; make clean)

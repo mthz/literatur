@@ -17,7 +17,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     cp ../ros/ros-tools-roslaunch/arra-ros-tools-roslaunch.pdf .
     cp ../ros/ros-tools-rqt/arra-ros-tools-rqt.pdf .
     cp ../ros/ros-tools-rviz/arra-ros-tools-rviz.pdf .
-    cp ../ros/ros-topic-message-service/arra-ros-message-service.pdf .
+    cp ../ros/ros-topic-message-service/arra-ros-topic-message-service.pdf .
 
     # add, commit and push files
     git add -f .
