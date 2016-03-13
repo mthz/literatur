@@ -1,6 +1,6 @@
 all: arra-ros-tools-rqt.tex
-	pdflatex arra-ros-tools-rqt.tex
-	pdflatex arra-ros-tools-rqt.tex
+	pdflatex arra-ros-tools-rqt.tex --quiet
+	pdflatex arra-ros-tools-rqt.tex --quiet
 	
 clean:
 	rm -f *.log *.toc *.aux *.nav *.out *.snm *.bbl *.blg *.synctex.gz
