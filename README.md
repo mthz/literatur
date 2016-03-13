@@ -31,7 +31,7 @@ The resources available in this repository provide a good starting point if you 
 
 * **ros-build-system**: Introduction in the ROS build system.
 
-* **ros-tools-roslauch**: Introduction in roslaunch which can be used to start multiple nodes with one call.
+* **ros-tools-roslaunch**: Introduction in roslaunch which can be used to start multiple nodes with one call.
 
 * **ros-tools-rqt**: Introduction in rqt which is a graphical debugging tool for ROS.
 
