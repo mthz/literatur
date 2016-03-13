@@ -11,8 +11,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     # using token clone pdf branch
     git clone --quiet --branch=$BRANCH https://${GH_TOKEN}@github.com/$TARGET_REPO build > /dev/null
     # go into directory and copy data we're interested in to that directory
-    cp ros/ros-basics/arra-ros-basics.pdf .
-    cp ros/ros-build-system/arra-ros-build-system.pdf .
+    cd build
+    cp ../ros/ros-basics/arra-ros-basics.pdf
+    cp ../ros/ros-build-system/arra-ros-build-system.pdf
 
     # add, commit and push files
     git add -f .
