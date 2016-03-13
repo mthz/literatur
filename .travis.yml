@@ -2,7 +2,7 @@ before_install:
 - sudo apt-get update && sudo apt-get install -y --no-install-recommends latex-beamer
   texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 script:
-- make
+- make > /dev/null
 after_success: bash .ci/deploy.sh
 env:
   global:
